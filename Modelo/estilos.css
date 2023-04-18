@@ -1,0 +1,86 @@
+/* Reset de estilos para normalizar el diseño en diferentes navegadores */
+body, html, h1, h2, h3, p, a, input, form, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el encabezado de la página */
+header {
+    background-color: #587e97;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilo para el título de la página */
+h1 {
+    font-size: 28px;
+}
+
+/* Estilo para el contenido principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para las secciones de la página */
+.section {
+    margin-bottom: 40px;
+}
+
+/* Estilo para los formularios */
+#formularioContacto {
+    margin-bottom: 10px;
+    background-color:#587e97;
+    color:white;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#formularioProceso {
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: #587e97;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Estilo para los campos de entrada de texto */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilo para los mensajes de error en los formularios */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+    font-size: 10px;
+}
+/* Estilo para el logo*/
+.logo {
+    width: 5%;
+    height: auto;
+  }
+/* Estilo para la imagen de los integrantes*/
+.integrantes {
+    width: 20%;
+    height: auto;
+  }
+
+ .card-img-top {
+    width: 40%;
+    height: auto;
+  }

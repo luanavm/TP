@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header id="presentacion-organizacion">
+    <!-- Sección de Presentación de la Organización -->
+  
+    <!-- Contenido de la sección de Presentación de la Organización -->
+    
+    <h1>Bienvenidos a Technology</h1><img src="logo.png"class="logo">
+    <p>¡Hola! Bienvenidos a nuestra página de venta de productos tecnológicos. Aquí encontrarás una amplia variedad de dispositivos electrónicos de última generación para facilitar tu vida diaria. .</p>
+    
+    </header>
+    
+    <!-- Sección de Presentación Personal -->
+  <section id="presentacion-personal">
+    
+    <!-- Contenido de la sección de Presentación Personal -->
+  
+    <h2>Conoce a nuestro equipo</h2>
+    <p>¡Conoce al equipo detrás de nuestra tienda en línea! Aquí te presentamos a nuestros vendedores dedicados que trabajan arduamente para proporcionarte los mejores productos tecnológicos.¡Gracias por elegirnos como tu destino para productos tecnológicos de calidad!</p>
+    <img src="equipo-de-negocios-dos-hombres-y-una-mujer-que-trabajan-juntos-en-un-proyecto-ilustración-vectorial-concepto-escena-office-198147876.jpg" alt="Imagen del equipo" class="integrantes">
+    
+  </section>
+
+  <!-- Sección de Formulario de Contacto -->
+    <section>
+        <!-- Contenido del formulario de contacto -->
+        <h2>Formulario de Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <input type="submit" value="Enviar">            
+        </form>
+    </section>
+    <div class="card-container" style="display: flex;">
+        <div class="card" style="width: 18rem;">
+          <img src="celular.png" class="card-img-top" alt="producto1">
+          <div class="card-body">
+            <p class="card-text">Celulares</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="notebook.png" class="card-img-top" alt="producto2">
+          <div class="card-body">
+            <p class="card-text">Notebooks.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="tablet.png" class="card-img-top" alt="producto3">
+          <div class="card-body">
+            <p class="card-text">Tablets.</p>
+          </div>
+        </div> 
+      </div>
+      
+    <!-- Sección de Formulario de Cotización -->
+    <section>
+        <!-- Contenido del formulario de cotización -->
+        <h2>Formulario de Cotización</h2>
+        <form id="formularioProceso" method="post">
+            <label for="nombreProceso">Nombre</label>
+            <input type="text" id="nombreProceso" name="nombreProceso">
+            <!-- Agregar otros campos del formulario aquí, por ejemplo, campo de precio y cantidad para la cotización -->
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad">
+            <button type="submit">Continuar</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>
