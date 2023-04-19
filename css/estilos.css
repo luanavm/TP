@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    margin-bottom: 10px;
+    background-color: #adb5bd;
+    filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 1));
+}
+
+#conocemos, #productos, #formularios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#productos{
+    background-color: rgb(213, 213, 213);
+}
+
+.logo {
+    width: 40px;
+    height: 30px;
+}
+
+.bienvenida{
+    margin: 5px;
+}
+
+.integrantes {
+    height: 300px;
+}
+
+.producto{
+    width: auto;
+    height: 200px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    filter: drop-shadow(-3px 3px 20px rgba(0, 0, 0, 1));
+}
+
+.contenedor-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.formularioContacto, .formularioProceso{
+    width: 25%;
+    align-self: center;
+    filter: drop-shadow(-3px 3px 10px rgba(0, 0, 0, 1));
+}
+
+.formularioContacto > div, .formularioProceso > div{
+    padding: 10px;
+}
+
+/* Estilo para los mensajes de error en los formularios */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+}

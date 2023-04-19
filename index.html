@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Technology</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="js/users.js"></script>  
+    <script src="js/formulario.js"></script>  
+</head>
+<body>
+    <header class="container-fluid dark--bs-dark-rgb">
+    <!-- Contenido de la sección de Presentación de la Organización -->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-2">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/logo.png" class="logo" alt="Logo">
+            Technology Store
+          </a>
+        </div>
+
+        <div class="col-2"></div>
+        
+        <div class="col-6 text-end">
+          <p class="bienvenida">¡Hola! Bienvenidos a nuestra página de venta de productos tecnológicos.<br> Aquí encontrarás una amplia variedad de dispositivos electrónicos de 
+            última generación para facilitar tu vida diaria.</p>
+        </div>
+      </div>
+    
+    </header>
+    
+    <!-- Contenido de la sección de Presentación Personal -->
+    <section class="container" id="conocenos">
+    
+      <div class="row row-cols-3">
+        <div class="col-6">
+          <h2>Nuestro equipo</h2>
+          <p>¡Conoce el grupo detrás de nuestra tienda en línea! Aquí te presentamos a nuestros vendedores dedicados que trabajan arduamente para 
+            proporcionarte los mejores productos tecnológicos.¡Gracias por elegirnos como tu destino para productos tecnológicos de calidad!</p>
+            <button class="btn btn-outline-secondary" id="loadUsers">Conocenos</button> 
+            <ul id="userList"></ul><!--No se llego a terminar-->
+        </div>
+
+        <div class="col-auto align-self-center">
+          <img src="imgs/equipo.jpg" alt="Imagen del equipo" class="integrantes">
+        </div>
+      </div>
+    
+    </section>
+
+    <!--Productos-->
+    <section class="container text-center" id="productos">
+      <div class="row row-cols-3 align-items-center">
+        <div class="col">
+          <a class="link" href="https://articulo.mercadolibre.com.ar/MLA-1365006829-notebook-hp-250-g8-i3-1005g1-10ma-gen-4gb-1tb-hdd-156-w10-_JM#position=31&search_layout=stack&type=item&tracking_id=e59d08c2-bc8c-4fa1-8fae-59eb01e8cc73" target="_blank">
+            <img src="imgs/notebook.png" class="producto" alt="Notebook"><br>
+            Notebooks </a>
+        </div>
+
+        <div class="col">
+          <a class="link" href="https://www.mercadolibre.com.ar/samsung-galaxy-a03-core-32-gb-green-2-gb-ram/p/MLA19638740?pdp_filters=item_id:MLA1181140645#is_advertising=true&searchVariation=MLA19638740&position=1&search_layout=stack&type=pad&tracking_id=81407601-9469-42f4-9502-955886deaf2e&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=MDQwYjU0ZmMtMmE1Mi00OGNiLTk1MDItMTA0MTBmMDFmZGQ2" target="_blank">
+            <img src="imgs/celular.png" class="producto" alt="Celular"><br>
+            Celulares</a>
+        </div>
+
+        <div class="col">
+          <a class="link" href="https://www.mercadolibre.com.ar/tablet-samsung-galaxy-tab-s-s7-fe-with-s-pen-sm-t733-124-128gb-mystic-black-y-6gb-de-memoria-ram/p/MLA18521907?pdp_filters=category:MLA82085#searchVariation=MLA18521907&position=8&search_layout=stack&type=product&tracking_id=3f3af2eb-74d1-404d-a8b9-63375c6b828a" target="_blank">
+            <img src="imgs/tablet.png" class="producto" alt="Tablet"><br>
+            Tablets</a>
+        </div> 
+      </div>
+    </section>
+
+    <!-- Formularios -->
+    <section class="contenedor-flex">
+      <form class="formularioContacto text-center" id="formularioContacto">
+        <h2>Contacto</h2>
+
+        <div>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+
+        <div>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+
+        <div>
+          <textarea class="form-control" id="mesaje" name="mensaje" placeholder="Mensaje" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-success" value="Enviar">Enviar</button>
+        </div>
+        
+      </form>
+
+      <form class="formularioProceso text-center" id="formularioProceso">
+        <h2>Cotización</h2>
+
+      <div>
+        <input class="form-control" type="text" id="nombreProceso" name="nombreProceso" placeholder="Nombre de Producto">
+      </div>
+        
+      <div>
+        <input class="form-control" type="number" id="precio" name="precio" placeholder="Precio">
+      </div>
+        
+      <div>
+        <input class="form-control" type="number" id="cantidad" name="cantidad" placeholder="Cantidad">
+      </div>
+        
+      <div>
+        <button type="submit" class="btn btn-success">Continuar</button>
+      </div> 
+      </form> 
+    </section>  
+</body>
+</html>
